@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="Black logo - no background.svg"/>
+  <title>Contact Us - Pixel Solutions</title>
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <a href="index.html">
+      <img class="logo-img" src="Black logo - no background.svg" alt="Brand Logo"/>
+    </a>
+    </div>
+  </header>
+
+  <nav>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="About-us.html" >About Us</a>
+      <a href="Services.html" >Services</a>
+      <a href="Contact-us.html">Contact Us</a>
+    </div>
+  </nav>
+
+  <section>
+    <h2>Contact Us</h2>
+
+    <form action="#" method="post" class="contact-form" onsubmit="return validateForm()">
+      <label for="name" class="form-label">Name:</label>
+      <input type="text" id="name" name="name" class="form-input" required>
+
+      <label for="email" class="form-label">Email:</label>
+      <input type="email" id="email" name="email" class="form-input" required>
+
+      <label for="phone" class="form-label">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" class="form-input" required>
+
+      <label class="form-label">How did you hear about us?</label>
+      <div class="checkbox-group">
+        
+        <input type="checkbox" id="referral" name="referral" value="referral" class="form-checkbox">
+        <label for="referral" class="form-checkbox-label">Referral</label>
+      
+        <input type="checkbox" id="social-media" name="social-media" value="social-media" class="form-checkbox">
+        <label for="social-media" class="form-checkbox-label">Social Media</label>
+      
+        <input type="checkbox" id="search-engine" name="search-engine" value="search-engine" class="form-checkbox">
+        <label for="search-engine" class="form-checkbox-label">Google</label>
+      </div>
+      
+
+      <label for="service" class="form-label">Select the service you're interested in:</label>
+      <select id="service" name="service" class="form-select">
+        <option value="Not Selected">Select Choice</option>
+        <option value="UI/UX">UI/UX Design</option>
+        <option value="Mobile app-development">Mobile App Development</option>
+        <option value="full- Stack">Full Stack Development</option>
+        
+      </select>
+
+      <label for="project-details" class="form-label">Project Details:</label>
+      <textarea id="project-details" name="project-details" rows="4" class="form-textarea" required></textarea>
+
+      <button type="submit" class="form-button">Submit</button>
+    </form>
+
+  </section>
+
+  <script>
+    function validateForm() {
+      var emailInput = document.getElementById("email");
+      var emailValue = emailInput.value;
+
+      // Simple email validation
+      if (!isValidEmail(emailValue)) {
+        alert("Please enter a valid email address.");
+        return false;
+      }
+    
+      return true;
+    }
+
+    function isValidEmail(email) {
+      // Basic email validation using a regular expression
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
+    }
+  </script>
+
+
+<footer>
+  <div class="footer-links">
+    <h3>Links</h3>
+    <ul>
+      <li><a href="index.html" >Home</li>
+      <li><a href="About-us.html" target="_blank">About Us</a></li>
+      <li><a href="Services.html" target="_blank">Services</a></li>
+      <li><a href="Contact-us.html" >Contact Us</a></li>
+    </ul>
+  </div>
+  <div class="contact-details">
+    <h3>Contact Details</h3>
+    <p>Email: info@pixelsolutions.com</p>
+    <p>Phone: +92 (123) 456-7890</p>
+  </div>
+  <div class="social-media">
+    <h3>Social Media</h3>
+    <ul>
+      <li><a href="#" target="_blank">Twitter</a></li>
+      <li><a href="#" target="_blank">Instagram</a></li>
+      <li><a href="#" target="_blank">LinkedIn</a></li>
+    </ul>
+  </div>
+</footer>
+
+</body>
+</html>

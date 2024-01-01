@@ -1,0 +1,192 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+
+.header-content {
+  flex: 2;
+ 
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #333;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 14px 20px;
+  display: inline-block;
+}
+
+
+section {
+  padding: 20px;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  margin-top:auto;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.footer-links,
+.contact-details,
+.social-media {
+  flex: 1;
+  padding:20px;
+}
+
+.footer-links ul,
+.social-media ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-links h3,
+.contact-details h3,
+.social-media h3 {
+  margin-bottom: 10px;
+}
+
+.footer-links li,
+.contact-details p,
+.social-media li {
+  margin-bottom: 5px;
+}
+
+.footer-links a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.contact-details,
+.social-media {
+  text-align: left;
+}
+
+.social-media a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.about-section {
+  padding: 20px;
+  text-align: center;
+}
+
+.middle-section{
+  background-color: #fff;
+
+
+}
+
+.logo-img{
+  height:10rem;
+}
+
+.header-content:hover{
+cursor: pointer;
+}
+
+.services-section {
+  text-align: center;
+}
+
+.service-box {
+  border: 2px solid #3498db;
+  padding: 20px;
+  padding-left: 0%;
+  padding-right: 0%;
+  margin: 20px;
+}
+
+.service-box img {
+  max-width:400px;
+  height:300px;
+  margin-bottom: 10px;
+}
+
+
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  border-color: #3498db;
+  border:2px ;
+}
+
+.form-label {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.checkbox-group {
+  display: flex;
+  flex-direction: row;
+}
+
+.form-checkbox {
+  margin-bottom: 10px;
+}
+
+.form-checkbox-label {
+  display: inline-block;
+  margin-top:10px;
+  margin-bottom: 15px;
+  margin-right: 5px;
+
+}
+
+.form-button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.form-button:hover {
+  background-color: #2980b9;
+}
+
