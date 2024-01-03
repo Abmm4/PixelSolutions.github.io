@@ -21,7 +21,10 @@ header {
 
 .header-content {
   flex: 2;
- 
+}
+
+.header-content:hover{
+cursor: pointer;
 }
 
 nav {
@@ -115,9 +118,7 @@ footer {
   height:10rem;
 }
 
-.header-content:hover{
-cursor: pointer;
-}
+
 
 .services-section {
   text-align: center;
