@@ -162,7 +162,7 @@ cursor: pointer;
 
 .checkbox-group {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .form-checkbox {
